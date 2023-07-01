@@ -1,0 +1,11 @@
+:root {
+  /* Sizes */
+  --max-width: 1200px;
+
+  /* Colors */
+  --black: #000;
+  --red: #e16259;
+
+  /* Fonts */
+  --default-font: Arial, Helvetica, sans-serif;
+}
