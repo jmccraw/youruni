@@ -5,7 +5,7 @@ interface FetchUniList {
   uniUrl: string;
 }
 
-interface UniList {
+export interface UniList {
   city: string;
   id: string;
   name: string;
