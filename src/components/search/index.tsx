@@ -15,8 +15,11 @@ const Search = () => {
         city, id, name, state, url
       }: UniList) => {
         const query = `${city} ${id} ${name} ${state} ${url}`.toLowerCase();
-        const terms = search.toLowerCase().split(' ');
-        return terms.some(term => query.includes(term));
+        const terms = search.toLowerCase().trim();
+        // This search was a little too loose
+        // const terms = search.toLowerCase().trim().split(' ');
+        // return terms.some(term => query.includes(term));
+        return query.includes(terms);
       });
     setFilteredList(searchResults);
   }, [uniList, search]);
