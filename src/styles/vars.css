@@ -1,9 +1,14 @@
 :root {
   /* Sizes */
+  --border-radius: 4px;
   --max-width: 1200px;
+  --small-max-width: calc(100vw - 40px);
 
   /* Colors */
   --black: #000;
+  --grey: #ccc;
+  --grey-light: #eee;
+  --grey-dark: #666;
   --red: #e16259;
 
   /* Fonts */
