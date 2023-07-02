@@ -2,7 +2,7 @@ import './index.css';
 
 const Nav = () => {
   return (
-    <nav className="nav">
+    <nav className="container nav">
       <a className="nav__wordmark nav__link" href="#">YourUni</a>
 
       <div className="nav__container">

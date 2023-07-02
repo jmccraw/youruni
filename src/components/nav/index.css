@@ -2,12 +2,8 @@
   align-items: baseline;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  max-width: calc(100vw - 40px);
-
-  @media screen and (min-width: 1240px) {
-    max-width: var(--max-width);
-  }
+  margin-bottom: 80px;
+  margin-top: 40px;
 }
 
 .nav__link {
@@ -19,8 +15,7 @@
   text-decoration: none;
   transition: box-shadow 0.25s ease-in-out;
 
-  &.is-active,
-  &:hover {
+  &.is-active, &:hover {
     box-shadow: 0 2px 0 var(--red);
   }
 }
