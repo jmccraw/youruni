@@ -27,3 +27,4 @@ Starts the application in development mode and opens [http://localhost:3000](htt
 * Add some tests
 * Add better TypeScript types
 * Add more error handling
+* Update the favicon
