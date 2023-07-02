@@ -1,0 +1,44 @@
+.nav {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+
+.nav__link {
+  box-shadow: 0 2px 0 transparent;
+  color: var(--black);
+  font: 400 17px/1.5 var(--default-font);
+  padding-bottom: 3px;
+  position: relative;
+  text-decoration: none;
+  transition: box-shadow 0.25s ease-in-out;
+
+  &.is-active, &:hover {
+    box-shadow: 0 2px 0 var(--red);
+  }
+}
+
+.nav__wordmark {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.45;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.nav__container {
+  height: 26px;
+
+  .nav__link {
+    margin-right: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
