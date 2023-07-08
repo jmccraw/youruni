@@ -1,8 +1,9 @@
 .nav {
   align-items: baseline;
+  container: nav / inline-size;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
+  margin-bottom: 75px;
   margin-top: 40px;
 }
 
@@ -35,6 +36,16 @@
 
   .nav__link {
     margin-right: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@container nav (max-width: 400px) {
+  .nav__container .nav__link {
+    margin-right: 12px;
 
     &:last-child {
       margin-right: 0;
