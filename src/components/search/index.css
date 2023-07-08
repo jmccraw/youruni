@@ -5,12 +5,16 @@
 .search__input {
   border: 2px solid var(--grey-light);
   border-radius: var(--border-radius);
-  font: 400 14px/1.5 var(--default-font);
+  font: 400 18px/1.5 var(--default-font);
   height: 44px;
   margin-bottom: 50px;
-  max-width: 352px;
+  max-width: 384px;
   padding: 0 16px;
   width: 100%;
+
+  &::placeholder {
+    font-size: 14px;
+  }
 }
 
 .search__container {

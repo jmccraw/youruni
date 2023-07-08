@@ -5,6 +5,5 @@
 
   @media screen and (min-width: 1240px) {
     max-width: var(--max-width);
-    padding: 0 20px;
   }
 }
