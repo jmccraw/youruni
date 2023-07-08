@@ -1,35 +1,12 @@
 import { useEffect, useReducer } from 'react';
 import formatCSV from '../utils/formatCSV';
 
-interface FetchUniList {
-  uniUrl: string;
-}
-
-export interface UniList {
-  city: string;
-  id: string;
-  name: string;
-  state: string;
-  url: string;
-}
-
-interface UniListState {
-  hasError: boolean;
-  isLoading: boolean;
-  uniList: UniList[];
-}
-
-interface UniListAction {
-  type: string;
-  payload?: UniList[];
-}
-
-export const FETCH_UNI_ACTION_TYPES = {
-  ERROR: 'error',
-  LOADING: 'loading',
-  RESET: 'reset',
-  SET: 'set',
-};
+import {
+  FetchUniList,
+  UniListState,
+  UniListAction,
+} from './types';
+import { FETCH_UNI_ACTION_TYPES } from './constants';
 
 const useFetchUniList = ({
   uniUrl,
